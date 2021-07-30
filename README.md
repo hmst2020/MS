@@ -13,10 +13,10 @@
     
           [實例三]考慮用香菜拌調味與顧客的反應。如下表 1-2 所收集293個樣本數據 檢定「香菜拌調味」與「顧客滿意度」是否沒有關聯(即獨立)。
     
-  第3節  IT 部門與行銷部門的協調
+      第3節  IT 部門與行銷部門的協調
   
 第2章  資料視覺化(Data Visualization)
 
-    [實例一]南丁格爾的玫瑰圖( Florence Nightingale’s Rose Diagram)
+          [實例一]南丁格爾的玫瑰圖( Florence Nightingale’s Rose Diagram)
     
-    [實例二]加拿大公職人員的語言能力(linguistics proficiency)百分比
+          [實例二]加拿大公職人員的語言能力(linguistics proficiency)百分比

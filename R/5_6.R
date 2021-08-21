@@ -87,7 +87,7 @@ eval_prediction<-lapply(   # 以客戶購買紀錄推估客戶未知的購買
       by=c('word'='word'))[,c('word','weighted','StockCode','idf')]
     user_recom<-user_predicted %>%   # 將同商品的TF-IDF權重加總
       group_by(StockCode) %>%
-      summarise(predicted_weighted=sum(weighted),.groups='drop')#*idf))
+      summarise(predicted_weighted=sum(weighted),.groups='drop')
     user_bought<-names(  # 已知購買的商品代號
       z[[user_id]][1:min(items_to_keep,length(z[[user_id]]))])
     user_recom<-user_recom[  # 排除已購買之商品

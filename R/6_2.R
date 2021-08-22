@@ -140,28 +140,4 @@ wordcloud2(  # 繪製文字雲
   color=words$color,  # 指定顏色欄
   shap='triangle',    # 雲形狀
   size = 0.3)         # 文字大小縮放比
-###########################
-library(topicmodels)
-news_corpus <- Corpus(
-  tm::VectorSource(news_society[1,]$body)) %>%
-  tm::tm_map(tokenize_my_token)
-word_freq<-news_society %>%
-  unnest_tokens(    # 以行為詞料庫將其各詞料為一列分列
-    output=word,        # 輸出各詞料的行名稱
-    input=body,         # 輸入詞料庫的行名稱
-    token='my_token'    # 自訂詞料庫分詞函式(自動加上tokenize_)
-  ) %>%
-  group_by(word) %>%
-  dplyr::count(word) %>%
-  dplyr::rename(freq=n) %>%
-  ungroup()
-inner_join(         # 只要情感辭典語詞交集部分
-  word_freq,       # 新聞詞語
-  bing_lexicon,     # 二元情感辭典
-  by=c('word'='word')) %>%   # 交集使用之欄位
-  dplyr::count(sentiment)
-library(showtext)
-library(wordcloud2)
-showtext_auto(enable = TRUE)
-wordcloud2(data = freq_df)
-wordcloud2(data = word.data[, -3], color = colors, size = 0.4)
+################ end of 6_2.R ###########

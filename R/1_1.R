@@ -21,4 +21,4 @@ eigA.df<-data.frame(           # 計算特徵值佔比
   prop=eigA$values/sum(eigA$values)) 
 eigA.df<-transform(eigA.df,cum=cumsum(eigA.df$prop)) 
 print(eigA.df)  # 列印特徵值占比累計表
-##################### end of 1_2.R #########
+##################### end of 1_1.R #########

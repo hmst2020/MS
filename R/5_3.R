@@ -237,4 +237,4 @@ rm(recc_model_1)   # 移除環境變數recc_model_1
 print(getList(        # 列印測試組第一個使用者的推估評比
   eval_prediction_1)[1:1]) 
 rm(eval_prediction_1)   # 移除環境變數recc_model_1
-######### end of 5_4.R###############
+######### end of 5_3.R###############

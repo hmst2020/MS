@@ -63,7 +63,7 @@ dist.e.n <- dist( # 計算交互之歐氏距離
   diag = TRUE,          # 含對角線(對應自身距離)之數字
   upper = TRUE          # 為閱讀方便上半部數字亦印出
 )
-cluster.e.n <- hclust( # 以全階方式進行群組分析
+cluster.e.n <- hclust( # 以完全連結方式進行群組分析
   dist.e.n,
   method = "complete"
 )
@@ -75,7 +75,7 @@ dist.e.s <- dist( # 計算交互之歐氏距離
   diag = TRUE,          # 含對角線(對應自身距離)之數字
   upper = TRUE          # 為閱讀方便上半部數字亦印出
 )
-cluster.e.s <- hclust( # 以全階方式進行群組分析
+cluster.e.s <- hclust( # 以完全連結方式進行群組分析
   dist.e.s,
   method = "complete"
 )
@@ -87,7 +87,7 @@ dist.e.m <- dist( # 計算交互之馬氏距離
   diag = TRUE,          # 含對角線(對應自身距離)之數字
   upper = TRUE          # 為閱讀方便上半部數字亦印出
 )
-cluster.e.m <- hclust( # 以全階方式進行群組分析
+cluster.e.m <- hclust( # 以完全連結方式進行群組分析
   dist.e.m,
   method = "complete"
 )
@@ -136,7 +136,7 @@ sink() # 同上
 #############################################
 # 繪出馬氏多階群組分析()                      #
 #############################################
-cluster.m <- hclust(  # 以全階方式進行群組分析
+cluster.m <- hclust(  # 以完全連結方式進行群組分析
   dist.manhattan,
   method = "complete"
 )
@@ -153,7 +153,7 @@ dist <- dist( # 計算交互之馬氏距離
   x=enrol,
   method = "manhattan"
 )
-cluster <- hclust(  # 以全階方式進行群組分析
+cluster <- hclust(  # 以完全連結方式進行群組分析
   dist,
   method = "complete"
 )
